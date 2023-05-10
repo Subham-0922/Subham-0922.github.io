@@ -3,6 +3,7 @@
 
 
 *{
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -164,6 +165,7 @@ section .title::after{
   cursor: pointer;
   display: none;
 }
+
 .nav-link.contact{
   color: #fff;
   font-size: 23px;
@@ -513,6 +515,7 @@ section .title::after{
     background: crimson;
 }
 .teams .carousel .skills-card .box{
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -614,6 +617,7 @@ section .title::after{
 .contact .right form .name{
     margin-right: 10px;
 }
+
 .contact .right form .field input,
 .contact .right form .textarea textarea{
     height: 100%;
@@ -1056,3 +1060,4 @@ footer span a:hover{
         line-height: 38px;
     }
 }
+
