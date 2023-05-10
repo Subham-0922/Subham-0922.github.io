@@ -5,189 +5,181 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Subham Kr Burnwal PortFolio</title>
+    <title>PostFolio:Subham Kr Burnwal</title>
     <link rel="stylesheet" href="index.css">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="index.js"></script>
 </head>
 
 <body>
-
-    <div id="nav-menu">
-
-
-        <div>
-            <a href="index.html" style="text-decoration: none;"><button id="name">S.Burnwal</button></a>
-
+    <div class="flexCont1">
+        <div onclick="smoothScroll(document.getElementById('nav-menu'))" class="button-style">
+            Subham
         </div>
-
-        <div class="cont">
-            <div class="nav-link home">
-                <button onclick="smoothScroll(document.getElementById('name'))" id="homebutton" class="navbar_button">Home</button>
-            </div>
-            <div class="nav-link about">
-                <button onclick="smoothScroll(document.getElementById('dis'))" class="navbar_button">About</button>
-            </div>
-            <div class="nav-link skills">
-                <button onclick="smoothScroll(document.getElementById('resume-button-1'))" class="navbar_button">Skills</button>
-            </div>
-            <div class="nav-link projects">
-                <button onclick="smoothScroll(document.getElementById('scrolproject'))" class="navbar_button">Projects</button>
-            </div>
-            <div class="nav-link contact">
-                <button onclick="smoothScroll(document.getElementById('contact'))" class="navbar_button">Contact</button>
-            </div>
-            <div class="nav-link resume"  >
-                <a href="/resources/Subham Kr Burnwal-Resume.pdf" download style="text-decoration: none;"><button id="resume-button-2" class="navbar_button"
+        <div id="nav-menu">
+            <div onclick="smoothScroll(document.getElementById('nav-menu'))" class="button-style" class="nav-link home">Home</div>
+            <div onclick="smoothScroll(document.getElementById('two'))"  class="nav-link about button-style">About</div>
+            <div onclick="smoothScroll(document.getElementById('skilltap'))" class="button-style" class="nav-link skills">Skills</div>
+            <div onclick="smoothScroll(document.getElementById('projecttap'))" class="nav-link projects button-style">Projects</div>
+            <div onclick="smoothScroll(document.getElementById('contacttap'))" class="nav-link contact button-style">Contact</div>
+            <div  class="nav-link resume button-style" style="background-color: #11b08f; margin-right: 14px;">
+                <a style="text-decoration: none;background-color: #11b08f"
+                    href="/resources/Subham Kr Burnwal-Resume.pdf" download style="text-decoration: none;"><button
+                        style="background-color: #11b08f;color:aqua ;" id="resume-button-2" class="navbar_button"
                         style="width:145px;">Download Resume</button></a>
             </div>
         </div>
-
     </div>
-
-    <div id="home">
-        <div id="imger">
-            <img class="home-img" id="dis"  src="resources/home-img.png" alt="">
+    
+    <div id="two" class="home_home">
+        <div id="home">
+            <div class="home-img">
+                <img width="70%" height="350" src="resources/home-img.png" alt="">
+            </div>
         </div>
         <div id="about" class="about section">
-            <h2 style="font-size: 42px;" id="user-detail-name">Hello there ! <br> My name is Subham Kr Burnwal </h2>
-            <h2 style="font-size: 32px; color: #F59E0B;" class="text-changer"> I am a Java Backend Developer |</h2>
-            <h4 style="font-size: 22px; color: #F59E0B;"  id="user-detail-intro">I build and maintain the mechanisms that process data and
-                perform actions on websites. <br>
+            <div id="user-detail-name"">Subham Kr Burnwal</div>
+            <div id="user-detail-intro" ">
+                <img
+                    src="https://readme-typing-svg.demolab.com/?lines=Hi+👋+from+Subham!;Aspiring+Java+Developer+From+India&font=Fira%20Code&center=true&width=700&height=50&weight=700&size=25&duration=2000&pause=2000"><br>
+                I build and maintain the mechanisms that process data and perform actions on websites. <br>
                 I am responsibe for data storage, security, and other server-side functions that is invisible for the
                 users.
-            </h4>
-            <a href="https://drive.google.com/file/d/1lC-oYhA-wc5vqz635tqti0u_TtUm7Tx6/view?usp=share_link" target="_blank"><button  id="resume-button-1" class="newResumeButton">Download Resume</button></a>
-
+            </div>
+            <a href="/resources/Subham Kr Burnwal-Resume.pdf" download
+                style="text-decoration: none;margin-top: 5px;"><button class="button-style" id="resume-button-1"
+                    class="navbar_button" style="width:145px;">Download Resume</button></a>
         </div>
     </div>
-    <!-- <div id="skillscl"></div> -->
-    <h2 id="skillscl" style="color:#f78125">Skills <br> </h2>
-    
-    <div  id="skills">
-
-        <div class="skills-card" class="skill">
-            <img class="skills-card-img" src="resources/html_img.png" alt="">
+    <h1 id="skilltap" style="margin-top: 30px;">Skills</h1>
+    <div id="skills" class="skills">
+        <div class="skills-card">
+            <img src="resources/html_img.png" alt="" class="skills-card-img">
             <h3 class="skills-card-name">HTML</h3>
         </div>
-        <div class="skills-card" class="skill">
-            <img class="skills-card-img" src="resources/css_img.png" alt="">
+        <div class="skills-card">
+            <img src="resources/css_img.png" alt="" class="skills-card-img">
             <h3 class="skills-card-name">CSS</h3>
         </div>
-        <div class="skills-card" class="skill">
-            <img class="skills-card-img" src="resources/js_img.png" alt="">
-            <h3 class="skills-card-name">JavaScript</h3>
+        <div class="skills-card">
+            <img src="resources/js_img.png" alt="" class="skills-card-img">
+            <h3 class="skills-card-name">Javascript</h3>
         </div>
-        <div class="skills-card" class="skill">
-            <img class="skills-card-img" src="resources/java_img.png" alt="">
+        <div class="skills-card">
+            <img src="resources/java_img.png" alt="" class="skills-card-img">
             <h3 class="skills-card-name">Java</h3>
         </div>
-        <div class="skills-card" class="skill">
-            <img class="skills-card-img" src="resources/Mysql_img.png" alt="">
+        <div class="skills-card">
+            <img src="resources/Mysql_img.png" alt="" class="skills-card-img">
             <h3 class="skills-card-name">MySql</h3>
         </div>
-        <div class="skills-card" class="skill">
-            <img class="skills-card-img" src="resources/hibernate.svg" alt="">
+        <div class="skills-card">
+            <img src="resources/hibernate.svg" alt="" class="skills-card-img">
             <h3 class="skills-card-name">Hibernate</h3>
         </div>
-        <div class="skills-card" class="skill">
-            <img class="skills-card-img" src="resources/springio-icon.svg" alt="">
+        <div class="skills-card">
+            <img src="resources/springio-icon.svg" alt="" class="skills-card-img">
             <h3 class="skills-card-name">Spring</h3>
         </div>
-        <div class="skills-card" class="skill">
-            <img class="skills-card-img" height="60px" src="resources/spring_boot_img.png" alt="">
-            <h3 id="scrolproject" class="skills-card-name">SprintBoot</h3>
+        <div class="skills-card">
+            <img height="20%" src="resources/spring_boot_img.png" alt="" class="skills-card-img">
+            <h3 class="skills-card-name">Spring Boot</h3>
         </div>
-
-
     </div>
-        <!-- Image of the project
-    Title : class="project-title"
-    Description : class="project-description"
-    Tech stack used : class="project-tech-stack"
-    Link to GitHub repository : class="project-github-link"
-    Deployed link or video link : class="project-deployed-link" -->
-    <h2 style="color:#f78125">Projects, I have done <br> </h2> <br>
+    <h1 id="projecttap" style="margin-top: 30px;">Projects</h1>
     <div id="projects">
         <div class="project-card">
-            <img class="project-img" height="300px" width="80%" src="resources/intershala_img.png" alt="">
-            <h2  class="project-title" style="color:#f78125">Replica of Internshala</h2>
-            <p class="project-description" style="color:#f78125">A platform for a person who want to learn the skill to enter the corporate world.</p>
-            <a  class="project-github-link" style="text-decoration: #F59E0B;color: #F59E0B;" href="https://github.com/Subham-0922/possessiveLunch">Github link&nbsp;&nbsp;<img height="12px" width="12px" src="resources/git icon.png" alt="">&nbsp;&nbsp;|&nbsp;&nbsp;</a>
-            <a  class="project-deployed-link" style="text-decoration: #F59E0B;color: #F59E0B;" href="https://tranquil-kangaroo-a2087d.netlify.app/">Deploy link&nbsp;&nbsp;<img height="12px" width="12px" src="resources/link_icon.png" alt=""></a>
+            <img class="project-img" src="resources/intershala_img.png" alt="">
+            <h2 class="project-title">Replica of Internshala</h2>
+            <p class="project-description">A platform for a person who want to learn the skill to enter the corporate
+                world.</p>
+            <a class="project-github-link" href="https://github.com/Subham-0922/possessiveLunch">Github
+                link&nbsp;&nbsp;<img height="12px" width="12px" src="resources/git icon.png"
+                    alt="">&nbsp;&nbsp;|&nbsp;&nbsp;</a>
+            <a class="project-deployed-link" href="https://tranquil-kangaroo-a2087d.netlify.app/">Deploy
+                link&nbsp;&nbsp;<img height="12px" width="12px" src="resources/link_icon.png" alt=""></a>
         </div>
         <div class="project-card">
-            <img class="project-img" height="300px" width="80%" src="resources/NordStorm_img.png" alt="">
-            <h2  class="project-title" style="color:#f78125">Replica of NordStorm  Inc.</h2>
-            <p class="project-description" style="color:#f78125">Nordstrom, Inc. is a leading fashion retailer offering compelling clothing, shoes and accessories for men, women and kids.</p>
-            <a   style="text-decoration: #F59E0B;color: #F59E0B;" class="project-github-link" href="https://github.com/Subham-0922/affectionate-zinc-1194.git">Github link &nbsp;&nbsp;<img height="12px" width="12px" src="resources/git icon.png" alt="">&nbsp;&nbsp;|&nbsp;&nbsp;</a>
-            <a  style="text-decoration: #F59E0B;color: #F59E0B;" class="project-deployed-link" href="https://elegant-lebkuchen-d12793.netlify.app/">Deploy link &nbsp;&nbsp;<img height="12px" width="12px" src="resources/link_icon.png" alt=""></a>
+            <img height="60%" class="project-img" src="resources/NordStorm_img.png" alt="">
+            <h2 class="project-title">Replica of NordStorm Inc.</h2>
+            <p class="project-description">Nordstrom, Inc. is a leading fashion retailer offering compelling clothing,
+                shoes and accessories for men, women and kids.</p>
+            <a class="project-github-link" href="https://github.com/Subham-0922/affectionate-zinc-1194.git">Github link
+                &nbsp;&nbsp;<img height="12px" width="12px" src="resources/git icon.png"
+                    alt="">&nbsp;&nbsp;|&nbsp;&nbsp;</a>
+            <a class="project-deployed-link" href="https://elegant-lebkuchen-d12793.netlify.app/">Deploy link
+                &nbsp;&nbsp;<img height="12px" width="12px" src="resources/link_icon.png" alt=""></a>
         </div>
-        
-    </div>
-    
-    <h2 style="color:#f78125;margin-top: 10px;" >Statastics <br> </h2> <br>
-    <div class="stats">
-        
-        <div class="react-activity-calendar">
-            <h4 style="color:#f78125;margin-top: 1px;" >Git Calender <br> </h4> <br>
-            <img align="center" width="80%" src="https://ghchart.rshah.org/Subham-0922" alt="">
+        <div class="project-card">
+            <img height="40%" class="project-img" src="resources/Hr Managing.jpg" />
+            <h2 class="project-title">JDBC based HR Managing Softwar</h2>
+            <p class="project-description">A software to mantains employees details and their leaves </p>
+            <a class="project-github-link" href="https://github.com/Subham-0922/delicate-rabbits-5701">Github link
+                &nbsp;&nbsp;<img height="12px" width="12px" src="resources/git icon.png"
+                    alt="">&nbsp;&nbsp;|&nbsp;&nbsp;</a>
+            <a class="project-deployed-link"
+                href="https://drive.google.com/file/d/1cU1Ugujcf_WZdXRpQtila5c3jlTgzLRZ/view?usp=share_link">Deploy
+                Video link &nbsp;&nbsp;<img height="12px" width="12px" src="resources/link_icon.png" alt=""></a>
         </div>
-        <div id="github-streak-stats">
-            <h4 style="color:#f78125;margin-top: 1px;" >Git Streak <br> </h4> <br>
-            <img align="center" width="80%" height="200px" src="https://github-readme-streak-stats.herokuapp.com?user=Subham-0922" alt="">
-        </div>
-        <div class="github-top-langs">
-            <h4 style="color:#f78125;margin-top: 1px;" >Git Top Languages <br> </h4> <br>
-            <img align="center" width="80%" height="200px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Subham-0922&layout=compact" alt="">
-        </div>
-        <div class="github-stats-card">
-            <h4 style="color:#f78125;margin-top: 1px;" >Git Statastics Card <br> </h4> <br>
-            <img align="center" width="80%" height="200px" src="https://github-readme-stats.vercel.app/api?username=Subham-0922&show_icons=true&theme=black" alt="">
-        </div>
-
-
 
     </div>
-    <!-- GitHub profile link : id="contact-github"
-        LinkedIn profile link : id="contact-linkedin"
-        Phone number : id="contact-phone"
-        Email address : id="contact-email" -->
-    <h2 style="color:#f78125;margin-top: 10px;" >Contact Details <br> </h2> <br>
-    <div id="contact">
-        <div class="contcontact">
+    <h1 style="margin-top: 30px;">My GitHub Info</h1>
+
+    <div class="github">
+        <h3 style="margin-top: 30px;">My GitHub Calender</h3>
+        <img width="80%" height="300px" src="https://ghchart.rshah.org/Subham-0922" alt=""
+            class="react-activity-calendar"> <br><br>
+        <h3 style="margin-top: 30px;">My GitHub Streaks</h3>
+        <img width="40%" height="300px"
+            src="https://github-readme-streak-stats.herokuapp.com?user=Subham-0922&theme=yeblu" alt=""
+            class="github-streak-stats"><br><br>
+        <h3 style="margin-top: 30px;">My GitHub Languages</h3>
+        <img width="40%" height="300px"
+            src="https://github-readme-stats.vercel.app/api/top-langs/?username=Subham-0922&theme=gotham&hide_border=true&layout=compact&langs_count=3&layout=compact"
+            alt="" class="github-top-langs"><br><br>
+        <h3 style="margin-top: 30px;">My GitHub Statistics</h3>
+        <img width="40%" height="300px" src="https://github-readme-stats.vercel.app/api?username=Subham-0922" alt=""
+            class="github-stats-card">
+    </div>
+    <h1 id="contacttap" style="margin-top: 30px;">My Contact</h1>
+    <hr>
+    <div id="contactContain">
+        <div id="contact">
             <div id="contact-github">
-                <a style="text-decoration: #F59E0B;color: #F59E0B;" href="https://github.com/Subham-0922"><img height="25px" width="25px" src="resources/git icon2.png" alt=""><br>github/Subham-0922</a>
+                <a href="https://www.linkedin.com/in/subham-kumar789/"><img height="25px" width="25px"
+                        src="resources/linkedin_img.png" alt=""><br>linkedin/Subham789</a>
+
             </div>
-            <div id="contact-linkedin">
-                <a style="text-decoration: #F59E0B;color: #F59E0B;" href="https://www.linkedin.com/in/subham-kumar789/"><img height="25px" width="25px" src="resources/linkedin_img.png" alt=""><br>linkedin/Subham789</a>
-                
-            </div>
-            <div style="text-decoration: #F59E0B;color: #F59E0B;" id="contact-phone">
+
+            <div id="contact-phone">
                 <img height="25px" width="25px" src="resources/phone_img.png" alt=""><br>
                 8637353066
             </div>
             <div id="contact-email">
-                <a style="text-decoration: #F59E0B;color: #F59E0B;font-size: larger;" href="ksubham789@gmail.com"><img height="25px" width="25px" src="resources/gmail_html.png" alt=""> <br>ksubham789@gmail.com</a>
-    
+                <a href="ksubham789@gmail.com"><img height="25px" width="25px" src="resources/gmail_html.png" alt="">
+                    <br>ksubham789@gmail.com</a>
+
             </div>
+            <div id="contact-linkedin">
+                <a style="text-decoration: #F59E0B;color: #F59E0B;"
+                    href="https://www.linkedin.com/in/subham-kumar789/"><img height="25px" width="25px"
+                        src="resources/linkedin_img.png" alt=""><br>linkedin/Subham789</a>
+
+            </div>
+
         </div>
         <div id="form">
-            <input style="height: 40px;width: 600px; background-color: black; font-size: x-large; color: #f78125;" type="text" class="inputbox" placeholder="Your Name">
+            <input style="height: 40px;width: 600px; background-color: #c5d2e7; font-size: x-large; " type="text" class="inputbox" id="namebox" placeholder="Your Name">
             <br>
-            <input style="height: 40px;width: 600px; background-color: black; font-size: x-large;color: #f78125;" type="text" class="inputbox" placeholder="Your Gmail">
+            <input style="height: 40px;width: 600px; background-color: #c5d2e7; font-size: x-large;" type="text" class="inputbox" id="emailbox" placeholder="Your Gmail">
             <br>
-            <input style="height: 40px;width: 600px; background-color: black; font-size: x-large;color: #f78125;" type="text" class="inputbox" placeholder="Enter Your Message">
+            <input style="height: 40px;width: 600px; background-color: #c5d2e7; font-size: x-large;" type="text" class="inputbox" id="messagebox" placeholder="Enter Your Message">
             <br>
-            <button id="submit">Submit</button>
+            <button class="button-style" id="submit" onclick="sendEmail()">Submit</button>
 
         </div>
-
-        
     </div>
 
-
 </body>
-<script src="index.js"></script>
-
-
 
 </html>

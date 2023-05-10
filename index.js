@@ -1,7 +1,6 @@
-document.getElementById("homebutton").addEventListener("click",()=>{
-    
-})
-window.smoothScroll = function(target) {
+
+
+window.smoothScroll = function(target){
     var scrollContainer = target;
     console.log(target)
     do { //find scroll container
@@ -24,4 +23,7 @@ window.smoothScroll = function(target) {
     // start scrolling
     scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
 }
+
+
+
 console.log("aaa")
