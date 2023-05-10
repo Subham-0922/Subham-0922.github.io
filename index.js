@@ -1,4 +1,3 @@
-
 $(document).ready(function(){
     $(window).scroll(function(){
         // sticky navbar on scroll script
@@ -15,9 +14,6 @@ $(document).ready(function(){
             $('.scroll-up-btn').removeClass("show");
         }
     });
-
-
-
 
     // slide-up script
     $('.scroll-up-btn').click(function(){
@@ -99,14 +95,4 @@ $(document).ready(function(){
         }
     });
 });
-
-
-    scroll = function(c, a, b, i) {
-        i++; if (i > 30) return;
-        c.scrollTop = a + (b - a) / 30 * i;
-        setTimeout(function(){ scroll(c, a, b, i); }, 20);
-    }
-    // start scrolling
-    scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
-}
 
