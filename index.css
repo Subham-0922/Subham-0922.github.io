@@ -1055,4 +1055,9 @@ footer span a:hover{
         font-size: 23px;
         line-height: 38px;
     }
+    #nav-menu .logo a{
+        
+        font-size: 27px;
+        
+      }
 }
